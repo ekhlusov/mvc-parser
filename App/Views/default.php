@@ -39,14 +39,10 @@
                 <p>
                     <?php foreach ($data['data'] as $price): ?>
                     <?php
-                    $price = priceExploder($price);
-                    foreach ($price
-
-                    as $p): ?>
-                <p>Цена: <?= $p['price'] ?> <?= $p['currency'] ?></p>
-                <br>
-
-                <?php endforeach; ?>
+                        $price = priceExploder($price);
+                        foreach ($price as $p): ?>
+                        <p>Цена: <?= $p['price'] ?> <?= $p['currency'] ?></p>
+                    <?php endforeach; ?>
                 <?php endforeach; ?>
                 </p>
             </div>
