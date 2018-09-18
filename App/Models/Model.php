@@ -11,6 +11,5 @@ class Model
 
     public function __construct()
     {
-        $this->data = 1;
     }
 }
